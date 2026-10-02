@@ -18,3 +18,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+use App\Http\Controllers\SiswaController;
+
+Route::resource('siswa',SiswaController::class);
+
